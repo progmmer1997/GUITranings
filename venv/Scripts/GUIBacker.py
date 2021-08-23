@@ -100,7 +100,7 @@ additional_income_size=Combobox()
 additional_income_size['values']=(1000,5000,10000,15000,20000,25000,30000,350000,40000)
 additional_income_size.grid(column=1,row=7)
 
-
+b=Button(window,text="Click",command=click)
 
 window.mainloop()
 
