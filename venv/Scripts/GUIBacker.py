@@ -1,5 +1,6 @@
 from tkinter import*
 from tkinter import messagebox
+from tkinter.ttk import Combobox
 
 
 
@@ -61,7 +62,12 @@ creadt_size_text=StringVar()
 credit_size_entry=Entry(textvariable=creadt_size_text)
 credit_size_entry.grid(column=1,row=4)
 
+#  create salary size  label and combobox
 
+# create salary size combox
+salary_size=Combobox()
+salary_size['value']=(15000,20000,30000,35000,40000,45000,50000,55000,60000,65000,70000,750000,80000)
+salary_size.grid(column=1,row=5)
 
 
 
