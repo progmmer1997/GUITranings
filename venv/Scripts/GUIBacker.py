@@ -2,8 +2,14 @@ from tkinter import*
 from tkinter import messagebox
 from tkinter.ttk import Combobox
 
+
+general_income=0
 def click():
-            if additional_income_availability_entry.get() == "да" or additional_income_availability_entry.get()=="ecть":
+    if additional_income_availability_entry.get() == "да" or additional_income_availability_entry.get()=="ecть":
+        general_income=int(salary_size.get())+int(additional_income_size.get())
+        messagebox.showinfo("General income:",general_income) 
+    else: general_income=int(salary_size)    
+                
 
 
 
