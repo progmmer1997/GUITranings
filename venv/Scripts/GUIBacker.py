@@ -30,6 +30,16 @@ surname_text=StringVar()
 surname_entry=Entry(textvariable=surname_text)
 surname_entry.grid(column=1,row=1)
 
+#  ceate patronic label
+
+patronic_label=Label(window,text="Отчетсво",font=("Arial",25))
+patronic_label.grid(column=0,row=2)
+
+#  create patronic entry
+
+patronic_text=StringVar()
+patronic_entry=Entry(textvariable=patronic_text)
+patronic_entry.grid(column=1,row=2)
 
 
 window.mainloop()
