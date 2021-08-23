@@ -14,7 +14,18 @@ name_label=Label(window,text="Имя",font=("Arial",25))
 name_label.grid(column=0,row=0)
 
 name_text=StringVar()
-name_entry=Entry(window, textvariable=name_text)
-name_entry.grid(column=1,row=0)
+name_entry=Entry(window,textvariable=name_text)
+name_entry.grid(column=1,row=0)  # this method makes entry visible and add this on window in first column and 0 row
+
+# create surname label and entry
+
+#  create surname label
+
+surname_label=Label(window,text="Фамилия",font=("Arial",25))
+surname_label.grid(column=0,row=1)
+
+
+
+
 window.mainloop()
 
