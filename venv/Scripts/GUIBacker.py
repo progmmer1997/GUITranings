@@ -45,7 +45,7 @@ patronic_entry.grid(column=1,row=2)
 
 # create credit size label
 
-credit_size_label=Label(window,text="Размер",font=("Arial",25))
+credit_size_label=Label(window,text="Размер кредита",font=("Arial",25))
 credit_size_label.grid(column=0,row=3)
 
 # credit size entry
@@ -53,6 +53,14 @@ credit_size_label.grid(column=0,row=3)
 creadt_size_text=StringVar()
 credit_size_entry=Entry(textvariable=creadt_size_text)
 credit_size_entry.grid(column=1,row=3)
+
+credit_tern_label=Label(window,text="Размер кредита",font=("Arial",25))
+credit_tern_label.grid(column=0,row=4)
+
+creadt_size_text=StringVar()
+credit_size_entry=Entry(textvariable=creadt_size_text)
+credit_size_entry.grid(column=1,row=4)
+
 
 
 
