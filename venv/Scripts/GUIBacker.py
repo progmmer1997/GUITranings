@@ -24,6 +24,11 @@ name_entry.grid(column=1,row=0)  # this method makes entry visible and add this 
 surname_label=Label(window,text="Фамилия",font=("Arial",25))
 surname_label.grid(column=0,row=1)
 
+# create surname entry
+
+surname_text=StringVar()
+surname_entry=Entry(textvariable=surname_text)
+surname_entry.grid(column=1,row=1)
 
 
 
