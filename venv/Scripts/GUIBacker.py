@@ -41,6 +41,21 @@ patronic_text=StringVar()
 patronic_entry=Entry(textvariable=patronic_text)
 patronic_entry.grid(column=1,row=2)
 
+#  credite size label and entry
+
+# create credit size label
+
+credit_size_label=Label(window,text="Размер",font=("Arial",25))
+credit_size_label.grid(column=0,row=3)
+
+# credit size entry
+
+creadt_size_text=StringVar()
+credit_size_entry=Entry(textvariable=creadt_size_text)
+credit_size_entry.grid(column=1,row=3)
+
+
+
 
 window.mainloop()
 
