@@ -64,6 +64,12 @@ credit_size_entry.grid(column=1,row=4)
 
 #  create salary size  label and combobox
 
+# Create salary size label
+
+salary_size_label=Label(window,text="размер зарплаты",font=("Arial",25))
+salary_size_label.grid(column=0,row=5)
+
+
 # create salary size combox
 salary_size=Combobox()
 salary_size['value']=(15000,20000,30000,35000,40000,45000,50000,55000,60000,65000,70000,750000,80000)
