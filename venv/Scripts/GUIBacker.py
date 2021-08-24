@@ -8,7 +8,8 @@ def click():
     if additional_income_availability_entry.get() == "да" or additional_income_availability_entry.get()=="ecть":
         general_income=int(salary_size.get())+int(additional_income_size.get())
         messagebox.showinfo("General income:",general_income) 
-    else: general_income=int(salary_size)    
+    else: general_income=int(salary_size.get())
+    messagebox.showinfo("general income",general_income)
                 
 
 
@@ -100,7 +101,21 @@ additional_income_size=Combobox()
 additional_income_size['values']=(1000,5000,10000,15000,20000,25000,30000,350000,40000)
 additional_income_size.grid(column=1,row=7)
 
-b=Button(window,text="Click",command=click)
+#Collecting personal expence
+# Create personal expence label
+personal_expence_label=Label(window,text="Личные затраты",font=("Arial",25))
+personal_expence_label.grid(column=0,row=8)
 
+personal_expence=Combobox()
+personal_expence['values']=(1000,5000,10000,15000,20000,25000,30000,35000,40000)
+personal_expence.grid(column=1,row=8)
+
+ch
+
+
+
+
+b=Button(window,text="Click",command=click)
+b.grid(column=1,row=12)
 window.mainloop()
 
